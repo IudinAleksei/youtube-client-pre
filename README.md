@@ -1,27 +1,82 @@
-# YoutubeClientPre
+| Deadline         |
+|------------------|
+|                  |
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+# YouTube client app
+During the Angular course, you are to implement the YouTube client app. You can refer to the [Figma mockup](https://www.figma.com/file/tS3Zqk138yXUmRxSWKDv4r/YouTube-client?node-id=0%3A1)
 
-## Development server
+For further implementation create a new private repository named *youtube-client* on **your** GitHub account.
+Please add the following trainers to the collaborators' list:
+- https://github.com/litwin90  
+- https://github.com/Pulya10c
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Angular. Intro task
 
-## Code scaffolding
+### Getting started
+- Install *@angular/cli* package. It's highly recommended to use *SCSS* as the default stylesheet
+- Use ng-cli to create a new project
+- Explore the generated project structure
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Task requirements
+Within this task, you are to start implementing the main page of the app.
 
-## Build
+**[YouTube client. Main page JPG](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/angular/main.jpg)**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#### Project structure
+The project structure can be organized in the following way:
 
-## Running unit tests
+```
+    app
+    ├── header                
+    │   ├── header
+    ├── search
+    │   ├── search-results
+    │   ├── search-item
+    |   |── search-response.model.ts
+    │   ├── search-item.model.ts
+    │   ...
+    ├── app.component.html
+    ├── app.component.scss
+    ├── app.component.ts
+    ├── app.component.spec.ts
+    ├── app.module.ts
+    ...
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#### Task scope
+- Generate a new Angular project using ng-cli
+- Configure TSLint with the following file:
+[tslint.json](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/angular/tslint.json)
+- Think about how to break down the whole app into smaller pieces.
+- Generate all the necessary components using ng-cli. The search result list and each item should be represented as separate components
+- Based on the mocked response which is stored in .json file, create necessary interfaces
+[YouTube client. Response example](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/angular/response.json)
+- Once you finish the task, provide the link to your repository via submitting the [form](https://docs.google.com/forms/d/1ifX_q7zXK9akd-wuDhJ_pA6kmKioeFXPsI1XNavrWn4/edit?usp=sharing)
 
-## Running end-to-end tests
+Please bear in mind that you don’t need to implement any logic or markup. The outcome of this task should contain only newly generated and empty components.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Evaluation criteria
+Maximum points - **50**
 
-## Further help
+- [ ] The app is generated (**+5**)
+- [ ] Added base project structure for components and models. TSLint is configured with the file provided in the task description (**+10**)
+- [ ] All the necessary components were created (**+15**)
+- [ ] All the necessary models were created. Search result list and search item components contain declarations of necessary fields (**+20**)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Fines
+- [ ] Failure to submit on time may lead to points lose according to the [Stage #2 requirements](https://docs.rs.school/#/stage2?id=%d0%94%d0%b5%d0%b4%d0%bb%d0%b0%d0%b9%d0%bd%d1%8b)
+- [ ] The app doesn't work or has console errors (**-20**)
+- [ ] TSLint warnings or errors are present (**-15**)
+
+### Useful links
+https://www.typescriptlang.org/docs/home.html
+
+https://www.typescriptlang.org/docs/handbook/basic-types.html
+
+https://www.typescriptlang.org/play/index.html
+
+https://cli.angular.io
+
+https://angular.io/cli
+
+https://angular.io/tutorial
